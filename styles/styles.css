@@ -1,3 +1,7 @@
+body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 #gallery {
   display: flex;
   flex-wrap: wrap;
@@ -11,24 +15,23 @@
   padding-left: 0;
 }
 
-#gallery li{
-   max-width: calc((100% - 60px) / 3);
-  
+#gallery li {
+  max-width: calc((100% - 60px) / 3);
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  #validation-input {
-    border: 3px solid #bdbdbd;
-  }
-  
-  #validation-input.valid {
-    border-color: #4caf50;
-  }
-  
-  #validation-input.invalid {
-    border-color: #f44336;
-  }
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
