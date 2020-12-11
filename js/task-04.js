@@ -1,5 +1,5 @@
 let counterValue = 0;
-const counterRef = document.querySelector("span#value");
+const counterRef = document.querySelector("#value");
 const increment = () => {
   counterValue += 1;
   counterRef.textContent = counterValue;
