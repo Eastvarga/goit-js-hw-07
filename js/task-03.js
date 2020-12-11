@@ -16,11 +16,14 @@ const images = [
   },
 ];
 
-const imgListRef = document.querySelector("ul#gallery");
+const imgListRef = document.querySelector("#gallery");
 
-let imgListString = "";
-for (const elem of images) {
-  imgListString += `<li><img src="${elem.url}" alt="${elem.alt}"/></li>`;
-}
+const imgListString = images.reduce((totalString, element) => {
+  return (totalString += `<li><img src="${element.url}" alt="${element.alt}"/></li>`);
+}, "");
+//   "";
+// for (const elem of images) {
+//   imgListString += `<li><img src="${elem.url}" alt="${elem.alt}"/></li>`;
+// }
 
 imgListRef.insertAdjacentHTML("afterbegin", imgListString);
