@@ -1,10 +1,10 @@
-const subCategoriesArray = document.querySelectorAll("ul#categories > li.item");
+const subCategoriesArray = document.querySelectorAll("#categories > .item");
 const amountOfElements = `В списке ${subCategoriesArray.length} категорий.`;
 console.log(amountOfElements);
 
 for (const elem of subCategoriesArray) {
   console.log(`Категория: ${elem.firstElementChild.textContent}`);
-  const categoryCount = elem.querySelectorAll("ul > li").length;
+  const categoryCount = elem.querySelector(".item__list").children.length;
   console.log(`Количество элементов: ${categoryCount}`);
 }
 
